@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/fragmentA">
+
+    <fragment
+        android:id="@+id/fragmentA"
+        android:name="com.nitro.navigationsafeargsissue.FragmentA"
+        android:label="FragmentA">
+        <action
+            android:id="@+id/displayB"
+            app:destination="@id/fragmentB" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentB"
+        android:name="com.nitro.navigationsafeargsissue.FragmentB"
+        android:label="FragmentB" >
+        <action
+            android:id="@+id/displayB"
+            app:destination="@id/fragmentC" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentC"
+        android:name="com.nitro.navigationsafeargsissue.FragmentC"
+        android:label="FragmentC" >
+        <action
+            android:id="@+id/displayD"
+            app:destination="@id/fragmentD" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentD"
+        android:name="com.nitro.navigationsafeargsissue.FragmentD"
+        android:label="FragmentD" />
+</navigation>
